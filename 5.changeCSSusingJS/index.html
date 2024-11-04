@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Update CSS variables with <span class="hl">JS</span></h2>
+    <div class="controls">
+        <label for="blur">Blur:</label>
+        <input id="blur" name="blur" type="range" min="0" max="25" value="20" data-sizing="px">
+
+        <label for="spacing">Spacing:</label>
+        <input id="spacing" name="spacing" type="range" min="10" max="200" value="10" data-sizing="px">
+
+        <label for="base">Base:</label>
+        <input id="base" name="base" type="color" >
+    </div>
+    <img src="https://assets2.htv.com.vn/Images/.NEWZ%202024/NOV/03/Mayy/e16b3feb4e1ef640af0f.webp">
+</body>
+<style>
+    :root {
+        --spacing : 10px;
+        --base : gold;
+        --blur : 20px;
+    }
+
+    body {
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 2.2em;
+        color: white;
+        background: #193549
+    }
+
+    .hl {
+        color: var(--base);
+        font-size: 1.5em;
+    }
+
+    img {
+        width: 60%;
+        margin-top: 50px;
+        padding: var(--spacing);
+        background-color: var(--base);
+        filter: blur(var(--blur));
+        border-radius: 5px;
+    }
+
+    input {
+        width: 100px;
+    }
+</style>
+<script>
+    const inputs = document.querySelectorAll('.controls input');
+
+    function handdleUpdate() {
+        const suffix = this.dataset.sizing || ''; // get the 'px' for blur and spacing or nothing for base
+        document.documentElement.style.setProperty(`--${this.name}`,this.value+suffix);
+    }
+
+    inputs.forEach(input => input.addEventListener('change',handdleUpdate));
+</script>
+</html>
