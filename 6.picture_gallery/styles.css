@@ -40,11 +40,11 @@ body {
     align-items: center;
 }
 
-.panel1 {background-image: url(/6.picture_gallery/images/anna-sullivan-YfWwcpKfNFw-unsplash.jpg);}
-.panel2 {background-image: url(/6.picture_gallery/images/serge-esteve-CtA7F7BwT5o-unsplash.jpg);}
-.panel3 {background-image: url(/6.picture_gallery/images/tolga-ahmetler-iC9BaKy5drY-unsplash.jpg);}
-.panel4 {background-image: url(/6.picture_gallery/images/tolga-ahmetler-TxYWuzLutHE-unsplash.jpg);}
-.panel5 {background-image: url(/6.picture_gallery/images/tolga-ahmetler-YGHRPMRbAkE-unsplash.jpg);}
+.panel1 {background-image: url(/6.picture_gallery/images/1.png);}
+.panel2 {background-image: url(/6.picture_gallery/images/2.png);}
+.panel3 {background-image: url(/6.picture_gallery/images/3.jpg);}
+.panel4 {background-image: url(/6.picture_gallery/images/4.jpg);}
+.panel5 {background-image: url(/6.picture_gallery/images/5.png);}
 
 
 .panel p {
