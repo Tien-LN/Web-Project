@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.counter {
+    font-size: 6.5em;
+    margin-bottom: 10px;
+}
+
+.buttons {
+    max-width: 360px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.button {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 100px;
+    height: 35px;
+    font-size: 1.2em;
+    font-weight: 700;
+    text-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.increase {
+    background-color: rgb(51, 204, 51);
+    color: rgb(243, 241, 241);
+    transition: transform 0.2s ease;
+}
+
+.decrease {
+    background-color: rgb(204, 51, 51);
+    color: rgb(243, 241, 241);
+    transition: transform 0.2s ease;
+}
+
+.reset {
+    background-color: rgb(180, 180, 180);
+    color: rgb(51, 51, 51);
+    transition: transform 0.2s ease;
+
+}
+
+.increase:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.increase:active {
+    transform: scale(0.95);
+    background-color: rgb(34, 193, 34);
+}
+
+.decrease:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.decrease:active {
+    transform: scale(0.95);
+    background-color: rgb(179, 41, 41);
+}
+
+.reset:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.reset:active {
+    transform: scale(0.95);
+    background-color: rgb(160, 160, 160);
+}
