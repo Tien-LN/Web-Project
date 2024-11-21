@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>currency converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form class="container">
+        <h1>currency converter</h1>
+        <input type="text" id="input" placeholder="Enter the value">
+        <div class="selections">
+            <div>
+                <input type="radio" id="VndToUsd" name="unit">
+                <label for="VndToUsd">VND to USD</label>
+            </div>
+            <div>
+                <input type="radio" id="UsdToVnd" name="unit">
+                <label for="UsdToVnd">USD to VND</label>
+            </div>
+        </div>
+        <button class="submit" type="button" onclick="convert()">SUBMIT</button>
+        <P id="result">Result here</P>
+    </form>
+    <script src="index.js"></script>
+</body>
+</html>
