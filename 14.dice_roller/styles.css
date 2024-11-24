@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(151, 200, 250);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    height: 600px;
+    width: 700px;
+}
+
+.box {
+    background-color: rgb(151, 174, 250);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+h1 {
+    text-transform: capitalize;
+    font-size: 50px;
+    color: #024CAA;
+}
+
+.bar {
+    width: 72%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bar label {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.bar input {
+    width: 50px;
+    height: 30px;
+    text-align: center;
+    border-radius: 3px;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: rgb(107, 161, 255);
+    color: white;
+}
+
+#rollButton {
+    margin: 10px;
+    width: 90px;
+    height: 30px;
+    border-radius: 3px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #ff9f2b;
+    color: rgb(50, 130, 250);
+    transition: all 0.5s ease;
+}
+
+#rollButton:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#diceImages img {
+    width: 150px;
+    border-radius: 15px;
+    margin: 10px;
+}
+
+#result {
+    font-size: 2em;
+    margin: 20px;
+}
